@@ -1,0 +1,47 @@
+.video {
+  width: 100%;
+  height: auto;
+}
+
+.banner-title {
+  position: absolute;
+  color: white;
+  top: 600px;
+  margin-left: 40px;
+  letter-spacing: 1px;
+}
+.banner-main-title {
+  position: absolute;
+  color: white;
+  top: 550px;
+  margin-left: 40px;
+}
+
+.banner-secondary-title {
+  position: absolute;
+  color: white;
+  top: 560px;
+  margin-left: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+  .video {
+    width: 100%;
+    height: auto;
+  }
+
+  .banner-main-title {
+    position: absolute;
+    color: white;
+    top: 160px;
+    margin-left: 40px;
+    font-size: 15px;
+  }
+  .banner-title {
+    position: absolute;
+    top: 180px;
+    margin-left: 40px;
+    font-style: 'Circular Standard Black';
+    font-size: 10px;
+  }
+}

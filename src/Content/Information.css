@@ -1,0 +1,129 @@
+body {
+  background-color: #fcf5e8;
+}
+
+.information-container {
+  margin-left: 40px;
+  height: 650px;
+  margin: -3px auto;
+  font-size: 26px;
+  background-color: white;
+  padding-top: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  opacity: 0.8;
+  margin-bottom: 68px;
+  font-weight: lighter;
+}
+
+.information-paragraph {
+  font-size: 22px;
+  letter-spacing: 2px;
+  line-height: 37px;
+  text-align: justify;
+}
+
+img.programming-images {
+  width: 165px;
+  margin: 0 auto;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  background-color: #eaeaea;
+  padding: 20px 20px;
+}
+
+.paragraph-box {
+  text-align: center;
+}
+
+.information-title {
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 38px;
+  margin-bottom: 41px;
+}
+
+#info-paragraph {
+  width: 988px;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.highlighted {
+  color: #fd1015;
+  background: rgba(253, 16, 21, 0.1);
+}
+
+ul {
+  list-style-position: inside;
+}
+
+hr {
+  width: 100px;
+  color: #4a4a4a;
+}
+.course-container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.course-content {
+  margin-left: 20px;
+}
+
+.information-list {
+  text-align: left;
+  margin-left: 100px;
+  letter-spacing: 2px;
+}
+.languages-images {
+  display: flex;
+  margin-top: 57px;
+}
+
+img#html-logo {
+  width: 160px;
+}
+
+img#css-logo {
+  width: 130px;
+}
+
+img#js-logo {
+  width: 130px;
+}
+.course-content {
+  display: block;
+  background-color: white;
+  padding: 30px 40px;
+  letter-spacing: 2px;
+  line-height: 40px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  font-weight: lighter;
+  opacity: 0.8;
+  margin-bottom: 103px;
+}
+.course-header {
+  text-align: center;
+}
+
+.highlighted-course {
+  color: #7971fb;
+  background: #ebe9fe;
+}
+.course-secondary-title {
+  color: #1edd88;
+  font-size: 25px;
+}
+
+.course-list {
+  font-size: 19px;
+}
+.container-span {
+  font-weight: lighter;
+}
+
+.footer {
+  height: 100px;
+  background-color: black;
+}

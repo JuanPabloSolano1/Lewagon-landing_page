@@ -1,0 +1,26 @@
+.persona-information {
+  margin-left: 80px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  width: 400px;
+  line-height: 33px;
+  font-weight: lighter;
+}
+.persona-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 90px;
+}
+
+.persona-image {
+  width: 600px;
+  margin-left: 80px;
+  margin-top: 37px;
+}
+.persona-strong {
+  color: black;
+}
+.persona-span {
+  color: #62ddf5;
+  background: #e8fafe;
+}

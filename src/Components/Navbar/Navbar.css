@@ -1,0 +1,11 @@
+.MuiToolbar-root.MuiToolbar-regular.MuiToolbar-gutters {
+  background-color: white;
+  color: black;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+.logo {
+  width: 131px;
+  height: 44px;
+}
