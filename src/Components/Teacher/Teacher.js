@@ -15,7 +15,7 @@ export const Teacher = () => {
           been teaching in the Le Wagon community for a year now.<br></br>{' '}
           <br></br>
           Thomas loves Kitesurfing and surfing when the wind and waves are
-          popping
+          popping.{' '}
           <span role="img" aria-label="surfing">
             🏄
           </span>

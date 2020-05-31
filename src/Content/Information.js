@@ -1,8 +1,8 @@
 import React from 'react';
-import { Persona } from './Persona';
-import { Form } from './Form';
-import { Teacher } from './Teacher';
-import { Footer } from './Footer';
+import { Persona } from '../Components/Persona/Persona';
+import { Form } from '../Components/Form/Form';
+import { Teacher } from '../Components/Teacher/Teacher';
+import { Footer } from '../Components/Footer/Footer';
 
 import './Information.css';
 
@@ -20,7 +20,7 @@ export const Information = () => {
             apply the main components of web development. Learn by using the
             best coding practices with cool projects to enhance your knowledge.
             After the course you would understand the basics of HTML, CSS and
-            Javascript{' '}
+            Javascript.{' '}
             <span role="img" aria-label="hello">
               🚀
             </span>{' '}

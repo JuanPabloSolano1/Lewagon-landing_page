@@ -6,17 +6,17 @@
 .banner-title {
   position: absolute;
   color: white;
-  top: 600px;
+  top: 540px;
   margin-left: 40px;
   letter-spacing: 1px;
 }
 .banner-main-title {
   position: absolute;
   color: white;
-  top: 550px;
+  top: 490px;
   margin-left: 40px;
-  letter-spacing: 2px;
-  font-size: 35px;
+  letter-spacing: 1px;
+  font-size: 32px;
 }
 
 .banner-secondary-title {

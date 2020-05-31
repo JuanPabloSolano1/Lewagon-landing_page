@@ -15,7 +15,7 @@ export class Video extends React.Component {
           muted
           autoPlay
           src={
-            'https://res.cloudinary.com/spread-the-love/video/upload/v1590660991/Amsterdam_test_gszi6y.mov'
+            'https://res.cloudinary.com/spread-the-love/video/upload/v1590921104/Le_Wagon_final_s4ch0g.mov'
           }
           preload={'auto'}
           type={'video/mp4'}
