@@ -4,7 +4,7 @@ import { useReducer } from 'react';
 import axios from 'axios';
 import swal from 'sweetalert';
 
-export const Form = () => {
+export const Form = (props) => {
   const [newValues, setValues] = useReducer(
     (state, setState) => ({
       ...state,
@@ -31,12 +31,13 @@ export const Form = () => {
       last_name: newValues.last_name,
       email: newValues.email,
       date: new Date(),
+      id: props.id + 1,
     };
     axios
       .post('https://le-wagon-4622e.firebaseio.com/contacts.json', post)
       .then((response) => {
         console.log(response);
-        swal('Form has been submitted succesfully');
+        swal('The form has been succesfully submitted');
         let inputs = document.getElementsByTagName('input');
         for (let i = 0; i < inputs.length - 1; i++) {
           inputs[i].value = '';
