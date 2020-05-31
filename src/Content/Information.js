@@ -3,6 +3,7 @@ import { Persona } from '../Components/Persona/Persona';
 import { Form } from '../Components/Form/Form';
 import { Teacher } from '../Components/Teacher/Teacher';
 import { Footer } from '../Components/Footer/Footer';
+import Alert from '@material-ui/lab/Alert';
 import axios from 'axios';
 
 import './Information.css';
@@ -11,7 +12,7 @@ export class Information extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      students: [],
+      students: [50],
       id: [],
     };
   }
@@ -19,8 +20,9 @@ export class Information extends React.Component {
     axios
       .get('https://le-wagon-4622e.firebaseio.com/contacts.json')
       .then((response) => {
+        const { students } = this.state;
         this.setState({
-          students: 50 - Object.keys(response.data).length,
+          students: students - Object.keys(response.data).length,
           id: Object.keys(response.data).length,
         });
       })
@@ -28,9 +30,30 @@ export class Information extends React.Component {
   }
   render() {
     const { students, id } = this.state;
-    console.log(id);
+    let alert = null;
+    if (students >= 20 && students <= 49) {
+      alert = (
+        <Alert severity="success">
+          There are still several spots left. Don't miss the chance to
+          participate in our workshop!
+        </Alert>
+      );
+    } else if (students > 0 && students < 20) {
+      alert = (
+        <Alert severity="info">
+          The course is almost fully booked - Reserve your spot now!
+        </Alert>
+      );
+    } else if (students <= 0) {
+      alert = (
+        <Alert severity="error">
+          The course is fully Booked - There aren't any available spots left!
+        </Alert>
+      );
+    }
     return (
       <div className="container">
+        {alert}
         <div className="information-container">
           <h3 className="information-title">
             Do you want to learn a new in-high demand{' '}
@@ -115,7 +138,7 @@ export class Information extends React.Component {
             </div>
             <div className="form-container-text">
               <div>
-                <Form id={id} />
+                <Form id={id} students={students} />
               </div>
               <div className="course-information">
                 <div className="course-box">
@@ -139,7 +162,7 @@ export class Information extends React.Component {
                         <span role="img" aria-label="icon">
                           👥
                         </span>{' '}
-                        {students <= 0 ? 50 : students}
+                        {students < 0 ? 50 : students}
                       </span>
                     </div>
                   </h3>

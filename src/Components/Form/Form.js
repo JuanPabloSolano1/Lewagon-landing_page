@@ -4,7 +4,7 @@ import { useReducer } from 'react';
 import axios from 'axios';
 import swal from 'sweetalert';
 
-export const Form = (props) => {
+export const Form = ({ id, students }) => {
   const [newValues, setValues] = useReducer(
     (state, setState) => ({
       ...state,
@@ -23,7 +23,6 @@ export const Form = (props) => {
     let value = event.target.value;
     setValues({ [name]: value });
   };
-
   const handleClick = (event) => {
     event.preventDefault();
     let post = {
@@ -31,7 +30,7 @@ export const Form = (props) => {
       last_name: newValues.last_name,
       email: newValues.email,
       date: new Date(),
-      id: props.id + 1,
+      id: id + 1,
     };
     axios
       .post('https://le-wagon-4622e.firebaseio.com/contacts.json', post)
@@ -88,12 +87,22 @@ export const Form = (props) => {
           ></input>
         </div>
         <div className="submit-container">
-          <input
-            // onClick={handleClick}
-            className="submit"
-            type="submit"
-            value="Register"
-          ></input>
+          {students > 0 ? (
+            <input
+              // onClick={handleClick}
+              className="submit"
+              type="submit"
+              value="Register"
+            ></input>
+          ) : (
+            <input
+              // onClick={handleClick}
+              className="submit"
+              type="submit"
+              value="Register"
+              disabled
+            ></input>
+          )}
         </div>
       </form>
     </div>
