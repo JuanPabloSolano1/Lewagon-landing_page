@@ -2,6 +2,7 @@ import React from 'react';
 import { Persona } from './Persona';
 import { Form } from './Form';
 import { Teacher } from './Teacher';
+import { Footer } from './Footer';
 
 import './Information.css';
 
@@ -57,53 +58,76 @@ export const Information = () => {
         <hr></hr>
         <div className="course-container">
           <div>
-            <Form />
-          </div>
-          <div className="course-content">
-            <h1 className="course-header">
-              Course <span className="highlighted-course">Content</span>
-            </h1>
-            <div>
-              <h3>
-                Format of the course:{' '}
-                <span className="container-span">Online - Zoom</span>
-              </h3>
-              <h3>
-                Number of Students: <span className="container-span">50</span>
-              </h3>
-              <h3>
-                Course Duration: <span className="container-span">4 weeks</span>
-              </h3>
-              <h3>
-                Cost: <span className="container-span">Free of charge</span>
-              </h3>
+            <div className="course-content">
+              <h1 className="course-header">
+                Course <span className="highlighted-course">Content</span>
+              </h1>
               <h3 className="course-secondary-title">Kick-off Session</h3>
               <li className="course-list">
-                June 10th (19:00 - 21:00) - Setup and Introduction to CSS and
-                HTML
+                <strong>June 10th (19:00 - 21:00)</strong> - Setup and
+                Introduction to CSS and HTML
               </li>
               <h3 className="course-secondary-title">First Project</h3>
               <li className="course-list">
-                June 17th (19:00 - 21:00) - Build and deploy your first website
-                (Profile site)
+                <strong>June 17th (19:00 - 21:00) </strong> - Build and deploy
+                your first website (Profile site)
               </li>
               <h3 className="course-secondary-title">Second Project</h3>
               <li className="course-list">
-                June 24th (19:00 - 21:00) - Build and deploy a fully responsive
-                startup website
+                <strong>June 24th (19:00 - 21:00) </strong> - Build and deploy a
+                fully responsive startup website
               </li>
               <h3 className="course-secondary-title">
                 Introduction to Javascript
               </h3>
               <li className="course-list">
-                July 1st (19:00 - 21:00) - Introduction to Javascript. Build and
-                code an application using Vanilla JS.
+                <strong>July 1st (19:00 - 21:00)</strong> - Introduction to
+                Javascript. Build and code an application using Vanilla JS.
               </li>
               <h3 className="course-secondary-title">Wrap up session</h3>
               <li className="course-list">
-                July 1st (21:00 - 21:30) - Wrap up session and round table with
-                students
+                <strong>July 1st (21:00 - 21:30) </strong> - Wrap up session and
+                round table with students
               </li>
+            </div>
+          </div>
+          <div className="form-container-text">
+            <div>
+              <Form />
+            </div>
+            <div className="course-information">
+              <div className="course-box">
+                <h3 className="course-title">
+                  Format of the Course <br></br>
+                  <div className="span-course">
+                    <span className="container-span">Online - Zoom</span>
+                  </div>
+                </h3>
+              </div>
+              <div className="course-box">
+                <h3 className="course-title">
+                  Number of Students <br></br>{' '}
+                  <div className="span-course">
+                    <span className="container-span">50</span>
+                  </div>
+                </h3>
+              </div>
+              <div className="course-box">
+                <h3 className="course-title">
+                  Course Duration <br></br>
+                  <div className="span-course">
+                    <span className="container-span">4 weeks</span>
+                  </div>
+                </h3>
+              </div>
+              <div className="course-box">
+                <h3 className="course-title">
+                  Cost <br></br>
+                  <div className="span-course">
+                    <span className="container-span">Free of charge</span>
+                  </div>
+                </h3>
+              </div>
             </div>
           </div>
         </div>
@@ -112,7 +136,7 @@ export const Information = () => {
           <Teacher />
         </div>
       </div>
-      <div className="footer">Footer</div>
+      <Footer />
     </div>
   );
 };
