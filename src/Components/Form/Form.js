@@ -18,12 +18,14 @@ export const Form = () => {
   );
 
   const handleChange = (event) => {
+    event.preventDefault();
     let name = event.target.name;
     let value = event.target.value;
     setValues({ [name]: value });
   };
 
-  const handleClick = () => {
+  const handleClick = (event) => {
+    event.preventDefault();
     let post = {
       name: newValues.name,
       last_name: newValues.last_name,
@@ -44,7 +46,7 @@ export const Form = () => {
   };
   return (
     <div>
-      <div id="reset" className="form">
+      <form id="reset" className="form" onSubmit={handleClick}>
         <div className="form-header">
           <p>Register until June 9th</p>
         </div>
@@ -86,13 +88,13 @@ export const Form = () => {
         </div>
         <div className="submit-container">
           <input
-            onClick={handleClick}
+            // onClick={handleClick}
             className="submit"
             type="submit"
             value="Register"
           ></input>
         </div>
-      </div>
+      </form>
     </div>
   );
 };
