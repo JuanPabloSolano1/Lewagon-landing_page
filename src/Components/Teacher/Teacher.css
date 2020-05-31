@@ -12,7 +12,9 @@
 
 .teacher-image {
   width: 220px;
+  margin-top: 23px;
   height: 220px;
+  padding-left: 30px;
   background-size: contain;
 }
 
