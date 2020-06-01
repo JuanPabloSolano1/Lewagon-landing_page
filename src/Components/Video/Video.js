@@ -12,9 +12,9 @@ export class Video extends React.Component {
         <video
           className="video"
           loop
-          playsinline
           muted
           autoPlay
+          playsInline
           src={
             'https://res.cloudinary.com/spread-the-love/video/upload/v1590921104/Le_Wagon_final_s4ch0g.mov'
           }
