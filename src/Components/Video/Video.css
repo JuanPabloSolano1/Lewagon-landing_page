@@ -28,8 +28,8 @@
 
 @media only screen and (max-width: 600px) {
   .video {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 283px;
   }
 
   .banner-main-title {

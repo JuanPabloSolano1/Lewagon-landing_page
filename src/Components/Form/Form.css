@@ -47,6 +47,7 @@ label {
   color: white;
   font-size: 18px;
   opacity: 0.8;
+  border: none;
 }
 .submit:hover {
   background-color: #fd1015;
