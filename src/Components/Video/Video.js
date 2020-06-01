@@ -10,7 +10,6 @@ export class Video extends React.Component {
         <h1 className="banner-main-title">Programming Series in Amsterdam</h1>
         <p className="banner-title">Join our four week free Online Workshop</p>
         <video
-          playsInline
           className="video"
           loop
           muted
@@ -20,6 +19,7 @@ export class Video extends React.Component {
           }
           preload={'auto'}
           type={'video/mp4'}
+          playsInline
         ></video>
       </div>
     );
