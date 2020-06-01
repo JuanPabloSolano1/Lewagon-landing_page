@@ -11,6 +11,7 @@ export class Video extends React.Component {
         <p className="banner-title">Join our four week free Online Workshop</p>
         <video
           className="video"
+          playsInline
           loop
           muted
           autoPlay
