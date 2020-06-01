@@ -12,7 +12,7 @@ export class Video extends React.Component {
         <video
           className="video"
           loop
-          playsInline
+          playsinline
           muted
           autoPlay
           src={
