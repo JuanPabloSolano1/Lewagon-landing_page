@@ -13,13 +13,13 @@ export class Video extends React.Component {
           className="video"
           loop
           muted
+          playsInline
           autoPlay
           src={
             'https://res.cloudinary.com/spread-the-love/video/upload/v1590921104/Le_Wagon_final_s4ch0g.mov'
           }
           preload={'auto'}
           type={'video/mp4'}
-          playsInline
         ></video>
       </div>
     );
