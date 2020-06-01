@@ -46,7 +46,12 @@ label {
   background-color: #fd1015;
   color: white;
   font-size: 18px;
+<<<<<<< HEAD
   opacity: 0.9;
+=======
+  opacity: 0.8;
+  border: none;
+>>>>>>> d22a502752b9a336fcef72549b520778a9c0240e
 }
 .submit:hover {
   background-color: #fd1015;

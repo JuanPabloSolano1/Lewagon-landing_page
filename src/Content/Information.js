@@ -33,20 +33,20 @@ export class Information extends React.Component {
     let alert = null;
     if (students >= 20 && students <= 49) {
       alert = (
-        <Alert severity="success">
+        <Alert className="alert" severity="success">
           There are still several spots left. Don't miss the chance to
           participate in our workshop!
         </Alert>
       );
     } else if (students > 0 && students < 20) {
       alert = (
-        <Alert severity="info">
+        <Alert className="alert" severity="info">
           The course is almost fully booked - Reserve your spot now!
         </Alert>
       );
     } else if (students <= 0) {
       alert = (
-        <Alert severity="error">
+        <Alert className="alert" severity="error">
           The course is fully Booked - There aren't any available spots left!
         </Alert>
       );
