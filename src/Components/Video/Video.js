@@ -7,8 +7,12 @@ export class Video extends React.Component {
   render() {
     return (
       <div className="banner">
-        <h1 className="banner-main-title">Programming Series in Amsterdam</h1>
-        <p className="banner-title">Join our four week free Online Workshop</p>
+        <h1 className="banner-main-title">
+          Join the four-week online coding workshop with Le Wagon - Amsterdam
+        </h1>
+        <p className="banner-title">
+          Four weeks, Four live lectures and all free
+        </p>
         <video
           className="video"
           loop
