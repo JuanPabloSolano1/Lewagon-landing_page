@@ -8,10 +8,10 @@ export class Video extends React.Component {
     return (
       <div className="banner">
         <h1 className="banner-main-title">
-          Join the four-week online coding workshop with Le Wagon - Amsterdam
+          Programming Series in Le Wagon Amsterdam
         </h1>
         <p className="banner-title">
-          Four weeks, Four live lectures and all free
+          Four weeks, Four live lectures and all for free
         </p>
         <video
           className="video"
